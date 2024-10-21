@@ -17,7 +17,7 @@ function TableBody(props) {
   const rows = props.characterData.map((row, index) => {
     return (
       <tr key={index}>
-        <td>{row.id}</td> {/* Displaying the ID */}
+        <td>{row._id}</td> {/* Changed id to _id to match MongoDB */}
         <td>{row.name}</td>
         <td>{row.job}</td>
         <td>
